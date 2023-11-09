@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "GT Walsheim", ApercuPro, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;;
+}
+
+/* head container */
+.header{
+    text-align: center;
+    font-size: 14px;
+    line-height: 47px;
+    height: 50px;
+    color: #2c333f;
+    /* padding-top: 5%; */
+    background-color: #c4d1e6;
+}
+
+/* head link color adjustments */
+#headLink{
+color: green;
+font-weight: 700;
+font-size: 14px;
+}
+
+#icon{
+    text-decoration: none;
+}
+/* change the color of link while hover on it*/
+#headLink:hover{
+    color:#4a84ce;
+}
+
+
+/* FIRST PAGE ADJUSTMENTS  */
+.firstPage{
+    /* border : 2px solid red; */
+    height: 900px;
+    display: flex;
+    
+    
+}
+
+/* left div */
+.firstPage > .leftfirst{
+    /* border: 2px solid orange; */
+    width: 50%;
+    /* padding-left: 1%; */
+    padding-top: 20%;
+    
+    /* text-align: left; */
+}
+
+.firstPage > .leftfirst > #paraHead {
+    /* border: 2px solid green; */
+    width:95%;
+    margin: auto;
+}
+
+
+.firstPage > .leftfirst > #paraHead > h1{
+    font-size: 60px;
+    color: #2c333f;
+    
+}
+
+#greenhead{
+    color: #007960;
+}
+
+.firstPage > .leftfirst > #paraHead > p{
+    font-size: 17px;
+    color: #2c333f;
+    line-height: 32px;
+    text-align: center;
+    /* margin-left: 11%; */
+    font-weight: 500;
+    
+
+}
+
+#JoinButton {
+    /* border : 1px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto
+}
+#JoinButton > button { 
+    text-decoration: none;
+    /* border : 2px soild black; */
+    border-radius: 20%;
+    background-color: #007960;
+    color: #ffffff;
+    border: none;
+    width: 35%;
+    font: 14px;
+    font-weight: 550;
+    border-radius:20px;      
+     padding: 12px;       
+           
+  
+}
+
+
+
+/* right div  */
+.firstPage > :nth-child(2){
+    /* border: 2px solid blue; */
+    width: 50%;
+}
+
+.firstPage > :nth-child(2) > img{
+    width :100%;
+}
+
+
+
+/* ********************************************** */
+/* SECOND PAGE AJUSTMENTS */
+.secondPage{
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* width : 100%; */
+    text-align: center;
+    height: 350px;
+    /* margin: auto; */
+
+}
+
+
+
+/* img div */
+.logoImg{
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    width:95%;
+    height: 150px;
+    margin: auto;
+}
+
+.img{
+    /* border: 2px solid blue; */
+    margin: auto;
+    width: 100%;
+}
+
+.img> img{
+    width: 100%
+}
+
+
+
+.secondPage > #smallpara{
+    /* border: 2px solid yellow; */
+    width:70%;
+    margin: auto;
+}
+
+#smallpara > p {
+    font-size: 14px;
+    font-weight: 400;
+    color:#2c333f;
+}
+
+
+/* ******************************************* */
+
+/* THIRD PAGE DIV*/
+.thirdPage{
+    /* border: 2px solid blue; */
+    height: 750px;
+    background-color: rgb(193, 209, 174);
+}
+
+.thirdPage > h5, h1{
+    text-align: center;
+    
+}
+
+.thirdPage > h5{
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c333f;
+    font-weight: 550;
+}
+
+.thirdPage > h1{
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 48px;
+    color: #2c333f;
+}
+
+
+.videoWrap{
+    /* border: 2px solid red; */
+    /* height: ; */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 990px) {
+    .header{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 550;
+        line-height: 47px;
+        height: 50px;
+        color: #2c333f;
+        /* padding-top: 5%; */
+        background-color: #c4d1e6;
+    }
+    /* FIRST PAGE ADJUSTMENTS  */
+.firstPage{
+    /* border : 2px solid red; */
+    height: 900px;
+    flex-direction: column;
+}
+
+/* left div */
+.firstPage > .leftfirst{
+    /* border: 2px solid orange; */
+    width: 100%;
+    /* padding-left: 1%; */
+    padding-top: 20%;
+
+}
+
+/* right div  */
+.firstPage > :nth-child(2){
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+/* SECOND PAGE AJUSTMENTS */
+.secondPage{
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* width : 100%; */
+    text-align: center;
+    height: 350px;
+    margin-top: 100%;
+}
+
+
+/* img div */
+.logoImg{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(6,1fr); */
+    /* gap: 20px; */
+    width:40%;
+    height: 750px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.thirdPage{
+    /* border: 2px solid blue; */
+    margin-top: 55%; 
+    background-color: rgb(193, 209, 174);
+}
+
+.video{
+    width:90%;
+    margin: auto;
+}
+
+}
+
+
+/* small screen */
+@media screen and (max-width: 767px) {
+
+    .header{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 550;
+        line-height: 47px;
+        height: 50px;
+        color: #2c333f;
+        /* padding-top: 5%; */
+        background-color: #c4d1e6;
+    }
+
+   
+    /* FIRST PAGE ADJUSTMENTS  */
+.firstPage{
+    /* border : 2px solid red; */
+    height: 900px;
+    flex-direction: column;
+}
+
+/* left div */
+.firstPage > .leftfirst{
+    /* border: 2px solid orange; */
+    width: 100%;
+    /* padding-left: 1%; */
+    padding-top: 20%;
+
+}
+
+
+.firstPage > .leftfirst > #paraHead {
+    /* border: 2px solid green; */
+    width:80%;
+    margin: auto;
+}
+
+.firstPage > .leftfirst > #paraHead > h1{
+    font-size: 50px;
+    color: #2c333f;
+    
+}
+
+.firstPage > .leftfirst > #paraHead > p{
+    font-size: 14px;
+    color: #2c333f;
+    line-height: 25px;
+    text-align: center;
+    /* margin-left: 11%; */
+    font-weight: 500;
+}
+
+/* right div  */
+.firstPage > :nth-child(2){
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+
+/* SECOND PAGE AJUSTMENTS */
+.secondPage{
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* width : 100%; */
+    text-align: center;
+    height: 350px;
+    margin-top: 100%;
+}
+
+.secondPage > h1{
+    font-size: 35px;
+}
+
+
+/* img div */
+.logoImg{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(6,1fr); */
+    /* gap: 20px; */
+    width:40%;
+    height: 750px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* third page */
+.thirdPage{
+    /* border: 2px solid blue; */
+    height: 750px;
+    background-color: rgb(193, 209, 174);
+    margin-top: 90%
+}
+
+.thirdPage{
+    /* border: 2px solid blue; */
+    margin-top: 105%; 
+    background-color: rgb(193, 209, 174);
+}
+
+.video{
+    width:90%;
+    margin: auto;
+}
+
+}
+
+
+
+@media screen and (max-width: 520px){
+    /* header text */
+    .header{
+        text-align: center;
+        font-size: 8px;
+        font-weight: 550;
+        line-height: 47px;
+        height: 50px;
+        color: #2c333f;
+        /* padding-top: 5%; */
+        background-color: #c4d1e6;
+    }
+    #JoinButton {
+        /* border : 1px solid green; */
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        margin:auto
+    }
+
+
+    .secondPage > h1{
+        font-size: 25px;
+    }
+
+    .secondPage > #smallpara{
+        /* border: 2px solid yellow; */
+        width:90%;
+        margin: auto;
+    }
+
+    #smallpara > p {
+        font-size: 10px;
+        font-weight: 400;
+        color:#2c333f;
+    }
+
+    .thirdPage{
+        /* border: 2px solid blue; */
+     margin-top: 105%;
+        background-color: rgb(193, 209, 174);
+    }
+
+    .video{
+        width:90%;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

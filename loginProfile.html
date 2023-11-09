@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Poppins:wght@500;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgba(197, 148, 221, 0.377);
+        }
+
+        h1{
+            /* border: 1px solid red; */
+            font-size: 50px;
+            text-align: center;
+            font-weight: 550;
+            color :  rgb(235, 97, 37);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+     .img{
+        /* border: 2px solid springgreen; */
+        width: 25%;
+        margin: auto;
+
+     }
+
+     .img > img{
+        width: 100%;
+     }
+
+
+        .container{
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            width: 30%;
+            height: 550px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.768);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .profile{
+            border: 6px solid rgb(10, 111, 67);
+            width: 82%;
+            margin: auto;
+            margin-top: 3%;
+            height: 300px;
+            border-radius: 50%;
+            /* position: relative; */
+            
+
+        }
+
+        .profile > img{
+            width: 100%;
+            height: 300px;
+            /* position: relative; */
+            border-radius: 50%;
+            
+        }
+
+        .para{
+            /* border: 2px solid orange; */
+            width: 70%;
+            height: 140px;
+            margin: auto;
+            color :  rgb(235, 97, 37);
+            padding-bottom: 10%;
+
+        }
+
+        .para > p{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 35px;
+            font-family: 'Edu TAS Beginner', cursive;
+        }
+
+        /* parent div of button */
+        .button {
+            /* border: 1px solid red; */
+            width: 7%;
+            margin-left: 90%;
+        }
+        /* button of logout  */
+        #logout{
+            border: 1px solid goldenrod;
+            font-size: 18px;
+            font-weight: 550;
+            width:100%;
+            height: 40px;
+            background-color:  rgb(233, 70, 21);
+            border-radius: 5px;
+            
+            
+        }
+
+        #logout:hover{
+            background-color: rgb(245, 93, 11);
+            color: white;
+            cursor: pointer;
+        }
+
+        /* big screen */
+        @media only screen and (max-width: 990px){
+            .button {
+            /* border: 1px solid red; */
+            width: 10%;
+            margin:auto;
+        }
+
+        
+        .container{
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            width: 40%;
+            height: 550px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.768);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        }
+
+
+        /* small screen */
+        @media only screen and (max-width: 380px){
+            .button {
+            /* border: 1px solid red; */
+            width: 25%;
+            margin:auto;
+        }
+
+        
+        .container{
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            width: 90%;
+            height: 550px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.768);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button onclick="logout()" id="logout">Log Out</button>
+    </div>
+    
+    <h1>Welcome to</h1> 
+    <br>
+    <div class="img"><img src="https://www.hellobrightline.com/assets/brightline-logo.svg" alt=""></div>
+    <br>
+    <div class="container">
+        
+        <br>
+        <div class="profile">
+            <img src="https://pbs.twimg.com/media/Cisl5CVWEAA-q4t.jpg" alt="">
+        </div>
+
+        &nbsp;
+        <div class="para">
+            <p>Welcome <br>to <br> your profile</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let signout = document.getElementById("logout")
+
+    let logout = ()=>{
+        window.location.href = "./loginPage.html"
+    }
+  
+</script>

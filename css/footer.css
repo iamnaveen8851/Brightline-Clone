@@ -1,0 +1,308 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "GT Walsheim", ApercuPro, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;;
+}
+/* main container */
+.mainCont{
+    background-color: #2c333f;
+    padding:40px;
+    height: 500px;
+    /* border: 2px solid red; */
+
+
+}
+
+.wrapContainer{
+    /* border: 2px solid green; */
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    
+}
+
+.socialDetail{
+    /* border: 2px solid blue; */
+    width: 50%;
+
+}
+
+.socialDetail>h2{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+
+.socialDetail>p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+input[type="text"]{
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 2%;
+    font-size: 16px;
+    
+}
+
+button{
+    color: #2c333f;
+    width: 40px;
+    background-color: #ffffff;
+    height: 41px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -1px;
+}
+
+/* social links  */
+.socialIdLinks{
+    /* border: 2px solid orange; */
+    height : 50px;
+    padding:2%;
+}
+
+
+
+/* company adjustments */
+.companyDetails{
+    /* border: 2px solid yellow; */
+    width:50%;
+    /* margin-left: -150px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: space-evenly; */
+}
+
+.com{
+    /* border: 3px solid purple; */
+    width: 90%;
+    height: 150px;
+    display:grid;
+
+    
+}
+
+
+
+.com > div{
+    /* border: 2px solid white; */
+    /* margin-bottom: 200px; */
+}
+
+/* img adjustments */
+.com > div > ul > li > a > img{
+    width:100%;
+}
+
+
+
+.list > li {
+list-style-type: none;
+
+}
+
+.list > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* contact */
+.contact > h5 {
+    line-height: 40px;
+}
+
+.contact > p{
+    font-size: 13px;
+}
+
+/* para below contact */
+.brief >  p{
+line-height: 20px;
+}
+
+/* parabrief in 2nd container */
+#paraAdjust{
+/* border: 2px solid orange; */
+width: 280px;
+}
+
+
+@media screen and (max-width: 990px){
+/* main container */
+.mainCont{
+    background-color: #2c333f;
+    padding:40px;
+    height: 1500px;
+    /* border: 2px solid red; */
+
+
+}
+
+.wrapContainer{
+    display: flex;
+    flex-direction: column; 
+            
+}
+
+
+.socialDetail{
+   
+    width: 100%;
+
+}
+
+ /* company adjustments */
+ .companyDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.com{
+    /* border: 3px solid purple; */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+
+    
+}
+
+.com > div > ul > li > a > img{
+    width:20%;
+
+}
+
+        
+#paraAdjust {
+/* border: 2px solid orange; */
+width: 700px;
+margin: auto;
+}
+
+
+.socialDetail > h2{
+    text-align: center;
+}
+
+
+.socialDetail>p{
+    text-align: center;
+    font-weight: 400;
+}
+input[type="text"]{
+    width: 80%;
+    height: 40px;
+    padding-left: 5%;
+    font-size: 16px; 
+    margin-left: 5%;
+
+}
+
+
+button{
+    color: #2c333f;
+    width: 30px;
+    background-color: #ffffff;
+    height: 41px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -1px;
+}
+
+ /* social links  */
+ .socialIdLinks{
+    text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 640px){
+.wrapContainer{
+    display: flex;
+    flex-direction: column;            
+}
+
+
+.socialDetail{
+   
+    width: 100%;
+
+}
+
+ /* company adjustments */
+ .companyDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.com{
+    /* border: 3px solid purple; */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+
+    
+}
+
+.com > div > ul > li > a > img{
+    width:20%;
+
+}
+
+        
+#paraAdjust {
+/* border: 2px solid orange; */
+width: 500px;
+margin: auto;
+}
+
+.socialDetail > h2{
+    text-align: center;
+}
+
+
+.socialDetail>p{
+    text-align: center;
+    font-weight: 400;
+}
+input[type="text"]{
+    width: 80%;
+    height: 40px;
+    padding-left: 5%;
+    font-size: 16px; 
+    margin-left: 5%;
+
+}
+
+
+button{
+    color: #2c333f;
+    width: 30px;
+    background-color: #ffffff;
+    height: 41px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -1px;
+}
+
+ /* social links  */
+ .socialIdLinks{
+    text-align: center;
+}
+
+}
+
+
